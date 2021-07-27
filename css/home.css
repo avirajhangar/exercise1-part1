@@ -57,3 +57,29 @@
   color: white;
   text-decoration: underline;
 }
+
+.articles {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.article {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.article__date {
+  color: gray;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.article__img {
+  width: 100%;
+}
+
+.article__title {
+  padding: 15px 0;
+}

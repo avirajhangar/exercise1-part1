@@ -1,8 +1,8 @@
 function myFunction() {
-  var mobile_nav = document.querySelector(".mobile-nav");
-  var mobile_nav_list = document.querySelector(".mobile-nav-menu-wrap");
-  var lines = document.querySelectorAll(".line");
-  console.log(lines);
+  const mobile_nav = document.querySelector(".mobile-nav");
+  const mobile_nav_list = document.querySelector(".mobile-nav-menu-wrap");
+  const lines = document.querySelectorAll(".line");
+
   if (
     mobile_nav.classList.contains("open-menu") &&
     mobile_nav_list.classList.contains("open-menu")
