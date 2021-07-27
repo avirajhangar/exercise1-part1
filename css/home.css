@@ -50,7 +50,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .banner__block__text a {
@@ -82,4 +82,73 @@
 
 .article__title {
   padding: 15px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    width: 100%;
+    position: relative;
+    height: 450px;
+  }
+
+  .banner__block {
+    top: 28%;
+  }
+
+  .banner__block__subtitle {
+    width: 350px;
+  }
+
+  .banner__block__text {
+    width: 420px;
+    margin: 15px auto;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .article {
+    width: calc(50% - 15px);
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner__block {
+    top: 24%;
+  }
+
+  .banner__block__subtitle {
+    width: 500px;
+    margin: 40px auto;
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .banner__block__text {
+    width: 420px;
+    margin: 30px auto 40px;
+    font-weight: 100;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+
+  .article {
+    width: 20%;
+    font-family: "Roboto", sans-serif;
+  }
 }

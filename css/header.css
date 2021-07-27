@@ -13,7 +13,9 @@
   height: 50px;
   padding: 0 15px;
 }
-
+.desktop-nav {
+  display: none;
+}
 .header-link {
   margin-top: auto;
   margin-bottom: auto;
@@ -102,4 +104,46 @@
 .mobile-nav-menu-wrap ul li {
   margin: 20px 0;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-link {
+    color: white;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav-menu-wrap {
+    height: 100%;
+  }
+
+  .desktop-nav-menu-wrap ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 15px;
+    align-items: center;
+  }
+
+  .desktop-nav-menu-wrap ul li a {
+    margin-right: 15px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
 }
